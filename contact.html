@@ -1,6 +1,9 @@
 <!DOCTYPE html>
-<html> 
-    <head></head>
+<html> <head>
+    <script src='https://www.google.com/recaptcha/api.js' async defer></script>
+
+
+    </head>
     <title>Contact details</title>
     <link rel="stylesheet" href="style.3.css">
     <link rel="stylesheet" href="http:use.fontawesome.com/releases/v5.4.1/css/all.css">
@@ -19,49 +22,16 @@
 <centre><h1><br>  WANT TO GET IN TOUCH WITH ME?<br></h1> </centre>
             
 <centre><h1><br>  PLEASE DO LEAVE A COMMENT BELOW AND I WILL GET BACK TO YOU.<br></h1> </centre>
-
-        
-            <center><form method="post" action="https://getform.io/f/65a31086-269e-4dd8-9cac-b88d625b8062">
-                        <div class="row">
-                          <div class="col-25">
-                            <label for="fname"></label>
-                          </div>
-                          <div class="col-75">
-                            <input type="text" id="fname" name="firstname" placeholder="Your name..">
-                          </div>
-                        </div><br>
-                        <div class="row">
-                          <div class="col-25">
-                            <label for="lname"></label>
-                          </div><br>
-                          <div class="col-75">
-                            <input type="text" id="lname" name="lastname" placeholder="Your last name..">
-                          </div><br>
-                        </div>
-                        <div class="row">
-                          <div class="col-25">
-                            <label for="country"></label>
-                          </div><br>
-                          <div class="col-75">
-                            <input type="text" id= "Contact details"name="Contact details"placeholder="Your contact details..">
-                            </select>
-                          </div>
-                        </div>
-                        <div class="row">
-                          <div class="col-25">
-                            <label for="subject"></label>
-                          </div><br>
-                          <div class="col-75">
-                            <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
-                          </div>
-                        </div>
-                       <div class="middle">
-                     <input type="submit" value="Submit"><br/>
-                        </div>
-                        </form>
-                      </div><br>
-            </center>
-                      
+    
+    <form id="comment_form" action="form.php" method="post">
+      <input type="email" placeholder="Type your email" size="40"><br><br>
+      <textarea name="comment" rows="8" cols="39"></textarea><br><br>
+      <input type="submit" name="submit" value="Post comment"><br><br>
+      <div class="g-recaptcha" data-sitekey="=== 6LflebAUAAAAAAOwdnA9UoU9BFwV9rK6a6-jufNJV ==="></div>
+    </form>
+                    
+            
+          
          <div class="middle">
                     <a href="#">
                         <br>
